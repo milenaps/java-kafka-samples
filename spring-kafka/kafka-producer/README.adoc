@@ -1,0 +1,21 @@
+= Spring Boot kafka producer application using Spring Kafka
+
+== Build
+Run the command below on the root folder of this app from your terminal
+`./gradlew clean build`
+
+== Run
+=== Using Docker
+
+`docker build -t kafka-producer .`
+
+`docker run -it -p 6061:6061 --rm kafka-producer`
+
+=== Without docker
+
+`java -jar build/libs/kafka-producer-0.0.1-SNAPSHOT.jar`
+
+
+== Testing
+
+`curl --location --request GET 'localhost:6061/kafka/publish/hello!'`

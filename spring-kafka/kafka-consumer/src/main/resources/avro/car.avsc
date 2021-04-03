@@ -1,0 +1,25 @@
+{
+  "namespace": "com.mps.kafka.sample.avro",
+  "type": "record",
+  "name": "Car",
+  "fields": [
+    {
+      "name": "name",
+      "type": [
+        "string"
+      ]
+    },
+    {
+      "name": "make",
+      "type": [
+        "string"
+      ]
+    },
+    {
+      "name": "model",
+      "type": [
+        "string"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+server.port: 6062
+
+topic.name: test
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    schema:
+      registry:
+        url: http://localhost:8081
+    listener:
+      ack-mode: manual_immediate
+    consumer:
+      group-id: test-group-id
+      enable-auto-commit: false
+#      value:
+#        deserializer: "io.confluent.kafka.serializers.KafkaAvroDeserializer"

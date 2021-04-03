@@ -1,0 +1,16 @@
+server.port: 6061
+
+topic.name: test
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    schema:
+      registry:
+        url: http://localhost:8081
+    producer:
+      auto:
+        generate:
+          schemas: true
+#      value:
+#        serializer: "io.confluent.kafka.serializers.KafkaAvroSerializer"

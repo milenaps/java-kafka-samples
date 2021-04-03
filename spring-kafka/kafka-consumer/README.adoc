@@ -1,0 +1,16 @@
+= Spring Boot kafka consumer application using Spring Kafka
+
+== Build
+Run the command below on the root folder of this app from your terminal
+`./gradlew clean build`
+
+== Run
+=== Using Docker
+
+`docker build -t kafka-consumer .`
+
+`docker run -it -p 6062:6062 --rm kafka-consumer`
+
+=== Without docker
+
+`java -jar build/libs/kafka-consumer-0.0.1-SNAPSHOT.jar`
